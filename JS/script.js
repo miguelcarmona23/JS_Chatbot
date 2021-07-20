@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function output(input) {
 
     // Regex remove non word/space chars
-    // Trim trailing whitespce
+    // Trim trailing whitespace
     // Remove digits - not sure if this is best
 
     let text = input.toLowerCase().replace(/[^\w\s]/gi, "").replace(/[\d]/gi, "").trim();
@@ -42,7 +42,7 @@ function output(input) {
     addToChat(input, finalResult);
 }
 
-// function to match the bot's reply to a user's text
+// function to match the bots reply to a user's text
 function compare(userTexts, botReplies, text) {
     for (let x = 0; x < userTexts.length; x++) {
         for (let y = 0; y < botReplies.length; y++) {
